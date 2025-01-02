@@ -177,6 +177,7 @@ def register() -> None:
     _add_directive('only', sphinx.directives.other.Only)
     _add_directive('highlight', sphinx.directives.code.Highlight)
     _add_directive('todo', sphinx.ext.todo.Todo)
+    _add_directive('code-block', sphinx.directives.code.CodeBlock)
 
     for d in set(_subclasses(sphinx.ext.autodoc.Documenter)):
         if d.objtype != 'object':
